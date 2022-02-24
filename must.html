@@ -1,0 +1,32 @@
+<body>
+    <script type="text/javascript">
+    function renkdegistir()
+    {
+        if(document.getElementById("renk").value=="yesil")
+        {
+            document.body.style.background="green";
+        }
+        else if(document.getElementById("renk").value=="kirmizi")
+        {
+            document.body.style.background="red";
+        }
+        else if(document.getElementById("renk").value=="mavi")
+        {
+            document.body.style.background="blue";
+        }
+            else if(document.getElementById("renk").value=="siyah")
+        {
+            document.body.style.background="black";
+        }
+        }
+    
+    </script>
+    <h1 id="baslik1">Renk Değiştir</h1>
+    Renk Değiştir:<select id="renk">
+        <option value="yesil">yeşil</option>
+        <option value="kirmizi">Kırmızı</option>
+        <option value="mavi">Mavi</option>
+        <option value="siyah">Siyah</option>
+    </select><br />
+    <input type="submit" onclick="renkdegistir()" value="Değiştir"> 
+    </body>
